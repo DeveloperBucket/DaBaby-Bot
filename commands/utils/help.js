@@ -8,7 +8,7 @@ module.exports = {
   execute(message, args) {
     const embedHelp = new Discord.MessageEmbed()
       .setColor("#0099ff")
-      .setTitle("https://github.com/thezube1/dababy-bot")
+      .setTitle("https://github.com/DeveloperBucket/DaBaby-Bot")
       .setURL("https://discord.com/api/oauth2/authorize?client_id=867218237120446465&permissions=8&scope=bot")
       .setAuthor(
         "DaBaby Bot Help",
