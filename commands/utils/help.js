@@ -8,12 +8,11 @@ module.exports = {
   execute(message, args) {
     const embedHelp = new Discord.MessageEmbed()
       .setColor("#0099ff")
-      .setTitle("https://github.com/DeveloperBucket/DaBaby-Bot")
-      .setURL("https://discord.com/api/oauth2/authorize?client_id=867218237120446465&permissions=8&scope=bot")
+      .setTitle("DaBaby Bot Command List")
       .setAuthor(
         "DaBaby Bot Help",
         "https://i.imgur.com/bb7gfb4.jpg",
-        "https://devbucket.tk"
+        "https://github.com/DeveloperBucket/DaBaby-Bot"
       )
       .addField("``-lets go``", 'Joins the users voice channel and plays **LETS GO**, also sends **LETS GO** to the text channel the command was sent in!')
       .addField("``-yeah yeah``", 'Joins the users voice channel and plays **YEAH YEAH!**, also sends **YEAH YEAH!** to the text channel the command was sent in!')
@@ -24,7 +23,8 @@ module.exports = {
       .addField("``-jetson``", 'Joins the users voice channel and plays **Oh lord, Jetson made another one**, also sends **Oh lord, Jetson made another one** to the text channel the command was sent in!')
       .addField("``-its baby``", 'Joins the users voice channel and plays **YOU KNOW ITS BABY NEIGHBOR!**, also sends **YOU KNOW ITS BABY NEIGHBOR!** to the text channel the command was sent in!')
       .addField("``-reset``", 'Forces the bot to leave the voice channel if it doesnt automatically do it')
-
+      .setFooter(`Requested by ${message.author.tag}`)
+    
     message.reply(embedHelp);
   },
 };
