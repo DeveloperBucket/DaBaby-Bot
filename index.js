@@ -2,6 +2,8 @@ const fs = require("fs");
 const Discord = require("discord.js");
 require("dotenv").config();
 
+
+
 const client = new Discord.Client();
 client.commands = new Discord.Collection();
 
@@ -16,6 +18,14 @@ for (const folder of commandFolders) {
     client.commands.set(command.name, command);
   }
 }
+
+client.on('ready', () => {
+    console.log('LETS GO!')
+    client.user.setActivity('-help | LETS GO!')
+});
+
+
+
 
 client.on("message", (message) => {
   if (message.author.bot) return;
