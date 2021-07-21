@@ -1,6 +1,3 @@
-<h3 align="center">Your daily DaBaby bot</h3>
+### Setting Up:
 
-- -help **Gives you a list of these hip commands!**
-
-- Don't like the actual DaBaby bot? **Here's the repo!**
-
+- Create a .env and just put ``BOT_TOKEN = [token]`` but without the brackets around token!
