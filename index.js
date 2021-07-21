@@ -33,7 +33,7 @@ client.on("message", (message) => {
     try {
       client.commands.get(message.content).execute(message);
     } catch (error) {
-      message.reply("This isn't a valid command, run ``-help`` to see all available commands.");
+      message.reply(`${message.content} is not a valid command. Run **__-help__** to see all the commands.`);
     }
   }
 });
