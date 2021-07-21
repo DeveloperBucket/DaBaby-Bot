@@ -14,15 +14,10 @@ module.exports = {
         "https://i.imgur.com/bb7gfb4.jpg",
         "https://github.com/DeveloperBucket/DaBaby-Bot"
       )
-      .addField("``-lets go``", 'Joins the users voice channel and plays **LETS GO**, also sends **LETS GO** to the text channel the command was sent in!')
-      .addField("``-yeah yeah``", 'Joins the users voice channel and plays **YEAH YEAH!**, also sends **YEAH YEAH!** to the text channel the command was sent in!')
-      .addField("``-pull up``", 'Joins the users voice channel and plays **I PULL UP!**, also sends **I PULL UP!** to the text channel the command was sent in!')
-      .addField("``-huh``", 'Joins the users voice channel and plays **HUH!**, also sends **HUH?!** to the text channel the command was sent in!')
-      .addField("``-convertible``", 'Joins the users voice channel and plays ** I will turn a (word) NEIGHBOR into a convertible!**, also sends ** I will turn a (word) NEIGHBOR into a convertible!** to the text channel the command was sent in!')
-      .addField("``-huh``", 'Joins the users voice channel and plays **HUH!**, also sends **HUH?!** to the text channel the command was sent in!')
-      .addField("``-jetson``", 'Joins the users voice channel and plays **Oh lord, Jetson made another one**, also sends **Oh lord, Jetson made another one** to the text channel the command was sent in!')
-      .addField("``-its baby``", 'Joins the users voice channel and plays **YOU KNOW ITS BABY NEIGHBOR!**, also sends **YOU KNOW ITS BABY NEIGHBOR!** to the text channel the command was sent in!')
-      .addField("``-reset``", 'Forces the bot to leave the voice channel if it doesnt automatically do it')
+      .addField("``-help voice``", 'Displays all of the bots voice commands.')
+      .addField("``-help images``", 'Displays all of the bots image commands.')
+      .addField("``-help songs``", 'Displays all of the bots song commands.')
+      .addField("``-help moderation``", 'Coming soon!')
       .setFooter(`Requested by ${message.author.tag}`)
     
     message.reply(embedHelp);
